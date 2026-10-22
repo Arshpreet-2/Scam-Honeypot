@@ -1,0 +1,12 @@
+# --- scanner core ---
+playwright>=1.40
+tinyfish>=0.9          # real capture engine (needs TINYFISH_API_KEY)
+
+# --- backend API ---
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# --- dashboard (optional, standalone) ---
+streamlit>=1.30
+
+# stdlib used: re, difflib, hashlib, datetime, json, dataclasses

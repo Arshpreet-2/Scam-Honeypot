@@ -1,0 +1,43 @@
+{
+  "verdict": {
+    "url": "file:///home/claude/scam-honeypot/fixtures/test_fixture.html",
+    "score": 85,
+    "band": "HIGH",
+    "reasons": [
+      "page_brand_mismatch: page presents itself as 'echallan' but is served from 'file:///home/claude/scam-honeypot/fixtures/test_fixture.html', not 'echallan.parivahan.gov.in'.",
+      "payment_identifier: page exposes UPI id(s) ['trafficfine@okaxis'] while impersonating / looking suspicious.",
+      "off_platform_contact: pushes victims to Telegram/WhatsApp.",
+      "crypto_payout: crypto wallet(s) present ['0x52908400098527886E0F7030069857D2E4169EE7']."
+    ],
+    "identifiers": {
+      "upi": [
+        "trafficfine@okaxis"
+      ],
+      "phone": [],
+      "telegram": [
+        "@fine_support_bot",
+        "https://t.me/fine_support_bot"
+      ],
+      "whatsapp": [],
+      "crypto": [
+        "0x52908400098527886E0F7030069857D2E4169EE7"
+      ]
+    },
+    "claimed_brand": "echallan",
+    "actual_host": "file:///home/claude/scam-honeypot/fixtures/test_fixture.html"
+  },
+  "evidence": {
+    "final_url": "file:///home/claude/scam-honeypot/fixtures/test_fixture.html",
+    "title": "e-challan payment \u2014 TEST FIXTURE",
+    "status": "captured",
+    "screenshot": "evidence/demo/screenshot.png",
+    "screenshot_sha256": "6ab22cf3c1eb1c652f902937319d400dcbf2ef2493907283fd952dd11d9de2be",
+    "captured_at": "2026-10-20T12:54:11.445777+00:00",
+    "engine": "playwright",
+    "provenance": {
+      "http_status": 200,
+      "engine": "playwright-chromium",
+      "vantage": "local (demo) \u2014 swap to TinyFish India proxy for real runs"
+    }
+  }
+}
